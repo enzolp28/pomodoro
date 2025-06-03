@@ -1,6 +1,7 @@
 import UpdateTimeButton from "./components/UpdateTimeButton"
 import ToggleButton from "./components/ToggleButton"
 import { useSelector } from "react-redux"
+import getFormattedValue from "./utils/getFormattedValue"
 
 
 function App() {
@@ -35,7 +36,7 @@ function App() {
         <p className="text-center mb-2 text-xl font-semibold">{chronoValues.displayedValue.heading}</p>
 
         <p className="text-center flex justify-center mb-1">
-          <span className="text-4xl p-4 rounded bg-slate-300 text-slate-900">25:00</span>
+          <span className="text-4xl p-4 rounded bg-slate-300 text-slate-900">{getFormattedValue(chronoValues.displayedValue.value)}</span>
         </p>
         <p className="mb-10 text-center">Passed cycle(s) : {chronoValues.cycles}</p>
 
