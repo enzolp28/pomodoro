@@ -16,9 +16,9 @@ function App() {
           <div className="mr-10">
             <p className="text-center mb-1">Sessions</p>
             <div className="flex">
-              <UpdateTimeButton sign={"-"} type={"sessions"} />
+              <UpdateTimeButton sign={"-"} type={"session"} />
               <p className="mx-4 text-xl">{chronoValues.session.value / 60}</p>
-              <UpdateTimeButton sign={"+"} type={"sessions"} />
+              <UpdateTimeButton sign={"+"} type={"session"} />
 
             </div>
           </div>
